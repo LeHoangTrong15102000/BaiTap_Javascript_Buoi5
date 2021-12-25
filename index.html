@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Quản lý mảng cho người dùng</h3>
+
+      <div class="form-group">
+        <span>Nhập từng giá trị vào mảng</span>
+        <input id="soNhap" class="form-control" />
+        <button id="btnThemSo" class="btn btn-success mt-2">
+          Thêm vào mảng
+        </button>
+        <br />
+        <label class="mt-2">Mảng: </label>
+        <p id="mainArray" class="alert alert-success"></p>
+      </div>
+
+      <hr />
+
+      <h3>Bài 1</h3>
+      <div class="form-group">
+        <label>B1: Tổng các số dương trong mảng </label>
+        <p id="txtTongSoDuong" class="alert alert-success"></p>
+        <button id="btnTinhTongDuong" class="btn btn-success">
+          Nhấn nút để tính tổng
+        </button>
+      </div>
+
+      <hr />
+
+      <h3>Bài 2</h3>
+      <div class="form-group">
+        <label>B2: Đếm các số dương trong mảng </label>
+        <p id="txtDemSoDuong" class="alert alert-success"></p>
+        <button id="btnDemSoDuong" class="btn btn-success">
+          Nhấn nút để đếm
+        </button>
+      </div>
+
+      <hr />
+
+      <h3>Bài 3</h3>
+      <div class="form-group">
+        <label>B3: Tìm số nhỏ nhất trong mảng </label>
+        <p id="txtTimSoMin" class="alert alert-success"></p>
+        <button id="btnTimSoMin" class="btn btn-success">
+          Nhấn nút để hiện số nhỏ nhất
+        </button>
+      </div>
+      <hr />
+
+      <h3>Bài 4</h3>
+      <div class="form-group">
+        <label>B4: Tìm số dương nhỏ nhất trong mảng </label>
+        <p id="txtTimSoDuongMin" class="alert alert-success"></p>
+        <button id="btnTimSoDuongMin" class="btn btn-success">
+          Nhấn nút để hiện số dương nhỏ nhất
+        </button>
+      </div>
+      <hr />
+
+      <h3>Bài 5</h3>
+      <div class="form-group">
+        <label>B5: Tìm số chẵn cuối cùng trong mảng </label>
+        <p id="txtTimChanMin" class="alert alert-success"></p>
+        <button id="btnTimChanMin" class="btn btn-success">
+          Nhấn nút để hiện số chẵn cuối cùng
+        </button>
+      </div>
+      <hr />
+
+      <h3>Bài 6</h3>
+      <div class="form-group">
+        <label>B6: Đổi chỗ 2 giá trị trong mảng theo vị trí </label><br />
+        <label class="text-warning">Vị trí muốn đổi</label>
+        <input id="viTriDau" class="form-control" />
+        <label class="text-info">Vị trí đổi</label>
+        <input id="viTriSau" class="form-control" />
+        <label class="text-success mt-2">Kết quả mảng sau khi đổi</label>
+        <p id="txtKetQuaMang" class="alert alert-success"></p>
+        <button id="btnDoiViTri" class="btn btn-success">
+          Nhấn nút để đổi vị trí 2 giá trị trong mảng
+        </button>
+      </div>
+      <hr />
+
+      <h3>Bài 7</h3>
+      <div class="form-group">
+        <label>B7: Sắp xếp mảng theo thứ tự tăng dần </label>
+        <p id="KetQuaSapXep" class="alert alert-success"></p>
+        <button id="btnSapXep" class="btn btn-success">
+          Nhấn nút để sắp xếp
+        </button>
+      </div>
+      <hr />
+
+      <h3>Bài 8</h3>
+      <div class="form-group">
+        <label>B8: Tìm số nguyên tố đầu tiên trong mảng </label>
+        <p id="KetQuaSNT" class="alert alert-success"></p>
+        <button id="btnSNT" class="btn btn-success">
+          Nhấn nút để tìm số nguyên tố đầu tiên
+        </button>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/B1_TongCacSoDuong.js"></script>
+    <script src="./js/B2_DemSoDuong.js"></script>
+    <script src="./js/B3_TimSoNhoNhat.js"></script>
+    <script src="./js/B4_TimSoDuongNhoNhat.js"></script>
+    <script src="./js/B5_TimSoChanNhoNhat.js"></script>
+    <script src="./js/B6_DoiViTriHaiGiaTri.js"></script>
+    <script src="./js/B7_SapXepMangTangDan.js"></script>
+    <script src="./js/B8_TimSoNguyenToDauTien.js"></script>
+    <script src="./js/B9_TimSoNguyenTrongMangSoThuc.js"></script>
+    <script src="./js/B10_SoSanhSLSoDuongSoAm.js"></script>
+  </body>
+</html>
